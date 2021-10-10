@@ -28,15 +28,15 @@ int main() {
 	int retry;
 
 	do {
-	printf("³â : "); 
+	printf("ë…„ : "); 
 	scanf("%d", &year);
-	printf("¿ù : ");
+	printf("ì›” : ");
 	scanf("%d", &month);
-	printf("ÀÏ : ");
+	printf("ì¼ : ");
 	scanf("%d", &day);
 
-	printf("%d³âÀÇ %dÀÏÂ°ÀÔ´Ï´Ù.\n", year, dayofyear(year, month, day));
-	printf("´Ù½Ã ÇÒ±î¿ä? (1 ¡¦ ¿¹/0 ¡¦ ¾Æ´Ï¿À) : ");
+	printf("%dë…„ì˜ %dì¼ì§¸ì…ë‹ˆë‹¤.\n", year, dayofyear(year, month, day));
+	printf("ë‹¤ì‹œ í• ê¹Œìš”? (1 â€¦ ì˜ˆ/0 â€¦ ì•„ë‹ˆì˜¤) : ");
 	scanf("%d", &retry);
 	} while (retry == 1);
 
