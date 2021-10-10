@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #define _CRT_SECURE_NO_WARNINGS 
 
-//¸ÅÅ©·Î ¼±¾ğÀ» ÀÌ¿ëÇÑ swap ÇÔ¼ö
+//ë§¤í¬ë¡œ ì„ ì–¸ì„ ì´ìš©í•œ swap í•¨ìˆ˜
 #define swap(type, x,y) do {type t = x; x = y; y = t;} while (0)
 
 void array_reverse(int a[], int n) {
@@ -17,18 +17,18 @@ int main() {
 	int* x;
 	int nx;
 
-	printf("¿ä¼Ò °³¼ö: ");
+	printf("ìš”ì†Œ ê°œìˆ˜: ");
 	scanf("%d", &nx);
 	x = calloc(nx, sizeof(int));
 
-	printf("%d°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.\n", nx);
+	printf("%dê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.\n", nx);
 	for (i = 0; i < nx;i++) {
 		printf("x[%d] : ", i);
 		scanf("%d", &x[i]);
 	}
 
 	array_reverse(x, nx);
-	printf("¹è¿­ÀÇ ¿ä¼Ò¸¦ ¿ª¼øÀ¸·Î Á¤·ÄÇß½À´Ï´Ù. \n");
+	printf("ë°°ì—´ì˜ ìš”ì†Œë¥¼ ì—­ìˆœìœ¼ë¡œ ì •ë ¬í–ˆìŠµë‹ˆë‹¤. \n");
 	for (i = 0; i < nx; i++) {
 		printf("x[%d] = %d\n", i, x[i]);
 	}
@@ -37,6 +37,6 @@ int main() {
 }
 
 /*
-¿À·ù ¿øÀÎÀÌ ¹»±î.. 
-#define _CRT_SECURE_NO_WARNINGS ¾ê´Â ¿Ö ´õÀÌ»ó ¾ÈµÇ´Â °É±î..?
+ì˜¤ë¥˜ ì›ì¸ì´ ë­˜ê¹Œ.. 
+#define _CRT_SECURE_NO_WARNINGS ì–˜ëŠ” ì™œ ë”ì´ìƒ ì•ˆë˜ëŠ” ê±¸ê¹Œ..?
 */
