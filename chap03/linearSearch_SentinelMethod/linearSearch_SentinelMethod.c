@@ -25,8 +25,8 @@ int main() {
 	int i, nx, key, idx;
 	int* x;
 
-	puts("¼±Çü °Ë»ö(º¸ÃÊ¹ı)");
-	printf("¿ä¼ÒÀÇ °³¼ö : ");
+	puts("ì„ í˜• ê²€ìƒ‰(ë³´ì´ˆë²•)");
+	printf("ìš”ì†Œì˜ ê°œìˆ˜ : ");
 	scanf("%d", &nx);
 	x = calloc(nx + 1, sizeof(int));
 
@@ -35,14 +35,14 @@ int main() {
 		scanf("%d", &x[i]);
 	}
 
-	printf("°Ë»ö °ª : ");
+	printf("ê²€ìƒ‰ ê°’ : ");
 	scanf("%d", &key);
 	idx = search(x, nx, key);
 
 	if (idx == -1)
-		puts("°Ë»ö¿¡ ½ÇÆĞÇß½À´Ï´Ù.");
+		puts("ê²€ìƒ‰ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.");
 	else
-		printf("%d(Àº)´Â x[%d]¿¡ ÀÖ½À´Ï´Ù.\n", key, idx);
+		printf("%d(ì€)ëŠ” x[%d]ì— ìˆìŠµë‹ˆë‹¤.\n", key, idx);
 
 	free(x);							
 
