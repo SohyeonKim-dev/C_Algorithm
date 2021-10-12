@@ -20,12 +20,12 @@ int main() {
 	int* x;
 	int* ptr;
 
-	puts("bsearch ÇÔ¼ö¸¦ »ç¿ëÇÏ¿© °Ë»ö");
-	printf("¿ä¼ÒÀÇ °³¼ö : ");
+	puts("bsearch í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•˜ì—¬ ê²€ìƒ‰");
+	printf("ìš”ì†Œì˜ ê°œìˆ˜ : ");
 	scanf("%d", &numberOfX);
 	x = calloc(numberOfX, sizeof(int));
 
-	printf("³»¸²Â÷¼øÀ¸·Î ÀÔ·ÂÇÏ¼¼¿ä.\n", numberOfX);
+	printf("ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì…ë ¥í•˜ì„¸ìš”.\n", numberOfX);
 	printf("x[0] : ");
 	scanf("%d", &x[0]);
 	for (i = 1; i < numberOfX; i++) {
@@ -35,7 +35,7 @@ int main() {
 		} while (x[i] > x[i - 1]);
 	}
 
-	printf("°Ë»ö °ª : ");
+	printf("ê²€ìƒ‰ ê°’ : ");
 	scanf("%d", &key);
 	ptr = bsearch(&key,
 		x,
@@ -44,9 +44,9 @@ int main() {
 		(int(*)(const void*, const void*)) int_compare);
 
 	if (ptr == NULL)
-		puts("°Ë»ö¿¡ ½ÇÆĞÇß½À´Ï´Ù.");
+		puts("ê²€ìƒ‰ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.");
 	else
-		printf("%d´Â x[%d]¿¡ ÀÖ½À´Ï´Ù.\n", key, (int)(ptr - x));
+		printf("%dëŠ” x[%d]ì— ìˆìŠµë‹ˆë‹¤.\n", key, (int)(ptr - x));
 
 	free(x);
 
