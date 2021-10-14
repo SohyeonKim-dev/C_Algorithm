@@ -12,8 +12,8 @@ int factorial(int n) {
 int main() {
 	int number;
 	int fact_number;
-	std::cout << "Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : " << std::endl;
+	std::cout << "ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : " << std::endl;
 	std::cin >> number;
 	fact_number = factorial(number);
-	std::cout << number << "ÀÇ ¼øÂ÷ °ö¼ÀÀº " << fact_number << "ÀÔ´Ï´Ù. :)" << std::endl;
+	std::cout << number << "ì˜ ìˆœì°¨ ê³±ì…ˆì€ " << fact_number << "ì…ë‹ˆë‹¤. :)" << std::endl;
 }
