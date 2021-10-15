@@ -4,7 +4,7 @@ void moveTower(int disk, int first, int last) {
 	if (disk > 1) {
 		moveTower(disk - 1, first, 6 - first - last);
 	}
-	std::cout << "¿ø¹Ý" << disk << "¸¦ " << first << "±âµÕ¿¡¼­ " << last << "±âµÕÀ¸·Î!" << std::endl;
+	std::cout << "ì›ë°˜" << disk << "ë¥¼ " << first << "ê¸°ë‘¥ì—ì„œ " << last << "ê¸°ë‘¥ìœ¼ë¡œ!" << std::endl;
 	if (disk > 1) {
 		moveTower(disk - 1, 6 - first - last, last);
 	}
@@ -13,7 +13,7 @@ void moveTower(int disk, int first, int last) {
 int main() {
 	int numberOfDisk;
 
-	std::cout << "ÇÏ³ëÀÌÀÇ Å¾ ¿ø¹Ý °³¼ö : " << std::endl;
+	std::cout << "í•˜ë…¸ì´ì˜ íƒ‘ ì›ë°˜ ê°œìˆ˜ : " << std::endl;
 	std::cin >> numberOfDisk;
 	moveTower(numberOfDisk, 1, 3);
 }
