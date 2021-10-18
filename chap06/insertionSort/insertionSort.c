@@ -8,7 +8,7 @@ void insertionSort(int a[], int n) {
 	for (i = 1; i < n; i++) {
 		int temp = a[i];
 		for (j = i; j > 0 && a[j - 1] > temp; j--) {
-			a[j] = a[j - 1]; // ÇÑÄ­¾¿ ¿À¸¥ÂÊÀ¸·Î ÀÌµ¿
+			a[j] = a[j - 1]; // Ã‡Ã‘Ã„Â­Â¾Â¿ Â¿Ã€Â¸Â¥Ã‚ÃŠÃ€Â¸Â·ÃŽ Ã€ÃŒÂµÂ¿
 		}
 		a[j] = temp;
 	}
