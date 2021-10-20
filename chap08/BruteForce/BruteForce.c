@@ -25,17 +25,17 @@ int main() {
 	char txt[256];
 	char pattern[256];
 
-	puts("ºê·çÆ®-Æ÷½º¹ı");
-	printf("ÅØ½ºÆ® : ");
+	puts("ë¸Œë£¨íŠ¸-í¬ìŠ¤ë²•");
+	printf("í…ìŠ¤íŠ¸ : ");
 	scanf("%s", txt);
-	printf("ÆĞÅÏ : ");
+	printf("íŒ¨í„´ : ");
 	scanf("%s", pattern);
 
 	idx = bruteForce(txt, pattern);
 	if (idx == -1)
-		puts("ÅØ½ºÆ®¿¡ ÆĞÅÏÀÌ ¾ø½À´Ï´Ù.");
+		puts("í…ìŠ¤íŠ¸ì— íŒ¨í„´ì´ ì—†ìŠµë‹ˆë‹¤.");
 	else
-		printf("%d¹øÂ° ¹®ÀÚºÎÅÍ matchÇÕ´Ï´Ù.\n", idx + 1);
+		printf("%dë²ˆì§¸ ë¬¸ìë¶€í„° matchí•©ë‹ˆë‹¤.\n", idx + 1);
 
 	return 0;
 }
