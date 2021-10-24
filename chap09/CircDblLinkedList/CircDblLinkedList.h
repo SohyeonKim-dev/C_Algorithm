@@ -1,7 +1,7 @@
 #ifndef ___CircDblLinkedList
 #define ___CircDblLinkedList
 
-typedef struct __node  {	//ÅÂ±×(ÀÓ½Ã ÀÌ¸§, ÀÚ±â ÂüÁ¶ ±¸Á¶Ã¼)
+typedef struct __node  {	//íƒœê·¸(ì„ì‹œ ì´ë¦„, ìê¸° ì°¸ì¡° êµ¬ì¡°ì²´)
 	int data;
 	struct __node* prev;
 	struct __node* next;
@@ -10,7 +10,7 @@ typedef struct __node  {	//ÅÂ±×(ÀÓ½Ã ÀÌ¸§, ÀÚ±â ÂüÁ¶ ±¸Á¶Ã¼)
 typedef struct {
 	Dnode* head;
 	Dnode* current;
-} Dlist ; // ÀÚ±â ÂüÁ¶ ±¸Á¶Ã¼°¡ ¾Æ´Ï¹Ç·Î, ÅÂ±× ÇÊ¿ä ¾ø´Ù.
+} Dlist ; // ìê¸° ì°¸ì¡° êµ¬ì¡°ì²´ê°€ ì•„ë‹ˆë¯€ë¡œ, íƒœê·¸ í•„ìš” ì—†ë‹¤.
 
 void Initialize(Dlist* list);
 
